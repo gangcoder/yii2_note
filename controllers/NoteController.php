@@ -18,4 +18,16 @@ class NoteController extends \yii\web\Controller
     {
         echo __FILE__;
     }
+
+    /**
+     * 增加一个action
+     * 控制器中可以被直接访问的方法需要以 action 为前缀
+     * 
+     * @param  string $name name
+     */
+    public function actionHello($name = 'yii')
+    {
+        // render 方法用于渲染 hello 页面
+        return $this->render('hello', ['name' => $name]);
+    }
 }
