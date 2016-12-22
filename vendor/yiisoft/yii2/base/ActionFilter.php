@@ -29,12 +29,16 @@ class ActionFilter extends Behavior
      * and controller IDs.
      *
      * Since version 2.0.9 action IDs can be specified as wildcards, e.g. `site/*`.
-     *
+     * 
+     * 指定过滤器应用到哪些动作
      * @see except
      */
     public $only;
+
     /**
      * @var array list of action IDs that this filter should not apply to.
+     *
+     * 置顶那些动作不执行过滤器
      * @see only
      */
     public $except = [];
